@@ -1,0 +1,429 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    /* background-image: url(../IMAGES/bgimage.jpg);
+    background-size: cover;
+    /* ^^ means it will cover the entire area */
+    font-family: Helvetica,Arial,sans-serif;
+      
+}
+
+/*h1, h2, h3 {
+    margin: 0;
+}*/
+
+.molle-regular-italic {
+  font-family: "Molle", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h1 {
+    font-family: "Molle", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 30px;
+    color: #336633;
+}
+
+
+h2 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #919191;
+}
+
+h3 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #919191;
+}
+
+h4 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 0px;
+  color: #919191;
+}
+
+h5 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+font-size: 40px;
+}
+
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+font-size: 12px;
+}
+/* for next part, since it's an id, we use hashtag # */
+
+#container {
+    width: 100%;    /* good for responsiveness, will fit for mobile, tablet, desktop */
+    background-color: none;
+    height: 900px;  /* height is not as important as it used to be ... could also do 768px */
+    margin-left: auto;  /* auto defaults to whatever the system dictates */ 
+    margin-right: auto; /* auto will also center (?) */
+    
+}
+
+/* for next part, since it's a CLASS, we use a dot . */
+
+.header {
+    background-color: black;
+    width: 100%;
+    height: 200px; /* can customize based on our site */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topbanner {
+    background-image: linear-gradient(to right,#c6d299, #3e664b);
+    width: 100%;
+    height: 35px;
+}
+
+.bottombanner {
+    background-color: #c6d299;
+    width: 100%;
+    height: 35px;
+}
+
+/* next will do buttons within the nav */
+
+
+/*
+.nav a{
+    display: block; .... if you don't say BLOCK, the links "fall apart" 
+    color: ghostwhite;
+    text-align: center;
+    padding: 15px 30px;   .... or could write padding: 15px 15px 15px 15px for top, right, bottom, left 
+                    or could write padding: 15px 30px for (top and bottom) then (left and right)
+                     or could write padding: 20px for all around 
+    text-decoration: none;  .... will remove the underline from the link 
+}
+*/
+
+
+
+.nav ul{
+    float: left; /* floating links but don't always have to float */
+    list-style: none; /* removing the default bullet */
+    position: relative;   /* placing something .. before phones, everything was absolute .. now it's more relative .. sticky would be always visible, stay where it is as you scroll */
+    padding-right: 100px;
+
+}
+
+.nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+        text-align: center;
+}
+
+/* do next part in case we have a hover state .. otherwise it won't know where to place the hover state */
+
+.nav ul li a{
+    display: block;
+    font-family: leaguespartan-thin;
+    color: white;
+    font-size: 14px;
+    padding: 0px 0px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* next is for drop-down */
+
+.nav ul li ul {
+    display: none; /* bc if you use a block for the dropdown, play with it and see what happens */
+    position: absolute;
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;  /* curves the corners .. top left , top right, bottom right, bottom left */
+}
+
+/* next part goes back to the previous .nav ul li */
+.nav ul li a:hover {
+    display: block;
+    background-color: firebrick;
+    padding: 0px;
+}
+
+/*dropdown next*/
+.nav ul li:hover ul {
+    display: block;
+    background-color: firebrick;
+    padding: 5px 5px;
+}
+
+
+.nav ul li ul li {
+    padding: 5px 10px;
+}
+
+
+/* next part is for the drop-down LINKS */
+
+.nav ul li ul li a{
+    color: chartreuse;
+}
+
+.nav ul li ul li a:hover {
+    color: darkblue;
+}
+
+/* now for the slider */
+.slider > div > img {
+    width: 100%; /* again, percentages mean it's responsive */ 
+    flex: 70%;
+    flex-wrap: wrap; /* want it to break, but also want it to wrap (don't want it to stay static) */
+    display: flex;
+    opacity: .6;
+    padding: 0px;
+    position: relative;
+}
+
+.theleader {
+    width: 100%;
+}
+
+.theleader h1 {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+}
+
+.theleader h2 {
+    position: absolute;
+    width: 450px;
+    top: 460px;
+    left: 100px;
+}
+
+.shopconcentrates {
+    width: inherit;
+}
+
+.shopconcentrates h1 {
+    position: relative;
+    width: inherit;
+    top: 80px;
+    left: 100px;
+}
+
+.shopconcentrates h2{
+    position: relative;
+    width: inherit;
+    top: 150px;
+    left: 100px;
+}
+
+.flex-container {
+    display: flex;
+    /*background-color: black;*/
+    justify-content: center;
+    clear: both; /* means that the content within each column is not going to overflow */
+    margin-top: 200px;
+}
+
+/* next, doing the divs within the above div, use a forward arrow > */
+.flex-container > div {
+    /*background-color: darkolivegreen;
+    color: antiquewhite; /* text color */
+    width: 100%;
+    text-align: center;
+    line-height: 15px;
+    margin: 40px;
+}
+
+.flex-container2 {
+    display: flex;
+    /*background-color: black;*/
+    justify-content: center;
+    justify-content: center;
+    clear: both; /* means that the content within each column is not going to overflow */
+    margin-top: 200px;
+}
+
+.flex-container2 > div {
+    /*background-color: darkolivegreen;
+    color: antiquewhite; /* text color */
+    width: 100%;
+    text-align: center;
+    line-height: 15px;
+    margin: 40px;
+}
+
+.flex-container3 {
+    display: flex;
+    /*background-color: black;*/
+    justify-content: center;
+    clear: both; /* means that the content within each column is not going to overflow */
+    margin-top: 200px;
+}
+
+.flex-container3 > div {
+    /*background-color: darkolivegreen;*/
+    width: 100%;
+    text-align: center;
+    line-height: 15px;
+    margin: 40px;
+}
+
+.flex-container4 {
+    display: flex;
+    /*background-color: black;*/
+    justify-content: center;
+    clear: both; /* means that the content within each column is not going to overflow */
+    margin-top: 200px;
+}
+
+.flex-container4 > div {
+    /*background-color: darkolivegreen;
+    /*color: antiquewhite; /* text color */
+    width: 100%;
+    text-align: center;
+    line-height: 15px;
+    margin: 40px;
+}
+
+.shoppitchers {
+    width: inherit;
+}
+
+.shoppitchers h1 {
+    position: relative;
+    width: inherit;
+    top: 80px;
+    left: 100px;
+}
+
+.shoppitchers h2{
+    position: relative;
+    width: inherit;
+    top: 150px;
+    left: 100px;
+}
+
+
+/************** About page / How-to-Use **************/
+
+
+
+/*Easy-to-Use Concentrates*/
+.easytouse {
+    margin-left: 100px;
+}
+
+.easytouse h1 {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+}
+
+.easytouse h2 {
+    position: absolute;
+    top: 460px;
+}
+
+
+
+
+/* Mixing Directions*/
+.mixdirections {
+    margin-left:100px;
+}
+
+.mixdirections h1  {
+    position: absolute;
+    top: 700px;
+}
+
+.mixdirections h2 {
+    position: absolute;
+    top: 810px;
+}
+
+/*Pre-Measured Mix Pitchers*/
+.premeasured {
+    margin-left:100px;
+}
+
+.premeasured h1 {
+    position: absolute;
+    top: 1000px;
+}
+
+.premeasured h2 {
+    position: absolute;
+    top: 1110px;
+}
+
+
+/* FOOTERS */
+
+.footer1 {
+    margin-top: 1000px;
+}
+
+.footer1 > div > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50px;
+}
+
+.footer1 > div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+}
+
+.flex-container5 {
+    display: flex;
+    /*background-color: black;*/
+    justify-content: center;
+    clear: both; /* means that the content within each column is not going to overflow */
+}
+
+.flex-container5 > div > img
+{
+    display: flex;
+    margin-top: -10px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.footer2 {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    
+}
