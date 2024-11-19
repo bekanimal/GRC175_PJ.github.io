@@ -8,6 +8,19 @@ body {
       
 }
 
+.material-symbols-outlined {
+font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.material-symbols-outlined {
+    display:inline-flex;
+    vertical-align:top;
+}
+
 /*h1, h2, h3 {
     margin: 0;
 }*/
@@ -74,6 +87,33 @@ h6 {
   font-style: normal;
 font-size: 12px;
 }
+
+h7 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #5b5b5b;
+}
+
+h8 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  color: #919191;
+}
+
+h9 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #919191;
+}
+
 /* for next part, since it's an id, we use hashtag # */
 
 #container {
@@ -202,6 +242,28 @@ font-size: 12px;
     opacity: .6;
     padding: 0px;
     position: relative;
+}
+
+.breadcrumbs {
+    width: 100%;
+}
+
+.breadcrumbs h7 {
+    position: absolute;
+    top: 308px;
+    left: 100px;
+}
+
+.breadcrumbs h8 {
+    position: absolute;
+    top: 309px;
+    left: 145px;
+}
+
+.breadcrumbs h9 {
+    position: absolute;
+    top: 308px;
+    left: 178px;
 }
 
 .theleader {
@@ -413,15 +475,35 @@ font-size: 12px;
 
 .orderstatus h1  {
     position: absolute;
-    top: 1000px;
+    top: 1100px;
 }
 
 .orderstatus h2 {
     position: absolute;
-    top: 1110px;
+    top: 1010px;
 }
 
+.flex-container-orderstatus {
+    display: flex;
+    /*background-color: black;*/
+    justify-content: center;
+    justify-content: center;
+    clear: both; /* means that the content within each column is not going to overflow */
+    margin-top: 930px;
+}
 
+.flex-container-orderstatus > div {
+    /*background-color: darkolivegreen;
+    color: antiquewhite; /* text color */
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 12px;
+    margin: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #919191;
+}
 
 
 /************** FOOTERS **************/
