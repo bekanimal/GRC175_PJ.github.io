@@ -327,7 +327,7 @@ font-size: 12px;
 }
 
 
-/************** About page / How-to-Use **************/
+/************** HOW-TO-USE PAGE (i.e. ABOUT) **************/
 
 
 
@@ -381,7 +381,50 @@ font-size: 12px;
 }
 
 
-/* FOOTERS */
+
+
+/************** CONTACT US PAGE **************/
+
+
+
+/*How Can We Help You?*/
+.howcanwehelp {
+    margin-left: 100px;
+}
+
+.howcanwehelp h1 {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+}
+
+.howcanwehelp h2 {
+    position: absolute;
+    top: 460px;
+}
+
+
+
+
+/* Order Status*/
+.orderstatus {
+    margin-left:100px;
+}
+
+.orderstatus h1  {
+    position: absolute;
+    top: 1000px;
+}
+
+.orderstatus h2 {
+    position: absolute;
+    top: 1110px;
+}
+
+
+
+
+/************** FOOTERS **************/
 
 .footer1 {
     margin-top: 1000px;
