@@ -9,12 +9,79 @@
         <meta name="viewport" content="width=device width, intial-scale=1">
         
         <link rel="stylesheet" href="style.css">
+        
+        <!-- STYLING FORMS -->
+        <style>
+        textarea[id="field1"], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0px;
+            display: inline-block;
+            border: 1px solid #919191;
+            border-radius: 10px;
+            box-sizing: border-box;
+            
+            height: 48px;
+            line-height: 1.5;
+            resize: none;
+            font-family: League Spartan;
+            font-weight: 100;
+            color: #919191;
+        }
+
+        textarea[id="message"], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0px;
+            display: inline-block;
+            border: 1px solid #919191;
+            border-radius: 10px;
+            box-sizing: border-box;
+            
+            height: 300px;
+            line-height: 1.5;
+            resize: none;
+            font-family: League Spartan;
+            font-weight: 100;
+            color: #919191;
+  
+         
+        }
+           
+        
+        input[type=submit], select {
+            width: 100%;
+            height: 48px;
+            padding: 12px 20px;
+            margin: 32px 0;
+            display: inline-block;
+            border: 0px solid #000000;
+            border-radius: 4px;
+            color: #919191;
+            font-family: League Spartan;
+            font-weight: 300;
+            cursor: pointer;
+            background-color: #c6d299;
+            color: black;
+        }
+        
+        
+        input[type=submit]:hover {
+            background-color: #E5E5E5;
+            }
+        
+        </style>
+        
+        <!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Molle&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=play_arrow" />
+
+        
+        
     </head>
     
     <body>
@@ -22,34 +89,41 @@
             <div class="topbanner"></div>
             <div class="header">
                 <!-- <h1>Penny Juice Website</h1> -->
-                
-            <div class="nav">
+                       <div class="nav">
                         <ul>
-                            <li><a class="selected" href="index.html"> <img src="pg_logo_transparent.png" alt="logo, penny juice" width=200px></a></li>
+                            <li><a class="selected" href="index.html"> <img src="pg_logo_transparent.png" alt="logo, penny juice" width=210px></a></li>
                             <li><a href="about.html"><h3>HOW TO USE</h3></a></li>
-                            <li><a href="nutrition_compliance.html"><h3>NUTRITION & COMPLIANCE</h3></a>
+                            <li><a href="nutrition_compliance.html"><h3>NUTRITION & COMPLIANCE &#9660;</h3></a>
                             <!--now nesting a DROP-DOWN beneath flavors-->
                             <!--notice the unordered list below is within the flavors list bc it is a DROP-DOWN-->
                                 <ul>
-                                    <li><a href="orange.html"><h3>Orange</h3></a></li>
-                                    <li><a href="grape.html"><h3>Grape</h3></a></li>
-                                    <li><a href="cherry.html"><h3>Cherry</h3></a></li>
+                                    <li><a href="nutrition_compliance.html"><h3>Our Nutritional Label</h3></a></li>
+                                    <li><a href="nutrition_compliance.html"><h3>Food Safety Compliance</h3></a></li>
                                 </ul>
                             </li>    
                             
-                            <li><a href="contact.html"><h3>CONTACT US</h3></a></li>
+                            <li><a href="contact_us.html"><h3>CONTACT US &#9660;</h3></a>
+                            <ul>
+                                    <li><a href="contact_us.html"><h3>My Order</h3></a></li>
+                                    <li><a href="contact_us.html"><h3>Location</h3></a></li>
+                                </ul>
+                            
+                            </li>
+                   
+                            <li><a class="selected" href="index.html"> <img src="account_icon.png" alt="logo, penny juice" width=30px    padding: 0px;></a></li>
+                            <li><a class="selected" href="index.html"> <img src="shopping_cart_icon.png" alt="logo, penny juice" width=30px padding: 0px;></a></li>
                         </ul>
             
                 </div>
                 </div>
                 
                 <div class="bottombanner"></div>
-            
         <div class="breadcrumbs">
-            <h7>Home</h7>
+            <h7><a href="index.html">Home</a></h7>
             <h8><span class="material-symbols-outlined">play_arrow</span></h8>
             <h9> Contact Us </h9>
             </div>  
+            
         
         <div class ="howcanwehelp">
             <h1> How Can We Help You? </h1>
@@ -69,7 +143,7 @@ Please include your order number when reaching out to us.
                 <b>
                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;915 40th Ave
                 <br><br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Bettendork, IA
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Bettendorf, IA
                 <br><br>
                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;52722
                 </b>
@@ -90,27 +164,88 @@ Please include your order number when reaching out to us.
            
                 </div>
 
+
+            
+        <div class="sendmessage">
+        
+            <div class="flex-container-sendmessage">
+                
+                <div>
+                    
+            <!--  now 2 columns --> 
+                    
+                <h1>Message Us</h1>
+                    <h3>  
+            <!----------- FORM FIELDS ------------>
+            
+                <form action="/action_page.php">
+                <label for ="fname">First Name</label>
+                <textarea type="text" id="field1" placeholder=""></textarea>
+                
+                <label for ="lname">Last Name</label>
+                <textarea type="text" id="field1" placeholder=""></textarea>
+                
+                <label for ="email">Email</label>
+                <textarea type="text" id="field1" placeholder="your@email.com"></textarea>
+                
+                <label for ="ordernum">Order Number (optional)</label>
+                <textarea type="text" id="field1" placeholder="#12345678"></textarea>
+            
+                <label for ="message">Message</label>
+                <textarea type="text" id="message" placeholder="Write Your Message"></textarea>
+                
+                <input type="submit" value="SUBMIT">
+                
+                </form>
+                </h3>
+                    
+                </div>
+                
+                <div>
+                 <h1>Our Location</h1>
+<br><br><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.9389686331147!2d-90.56418832430187!3d41.5705654712772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e235a7cf4d89dd%3A0x64956b682ec0c88c!2sPENNY%20JUICE%20OF%20AMERICA!5e0!3m2!1sen!2sus!4v1732590986661!5m2!1sen!2sus" width="500" height="735" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                
+                </iframe>
+                
+                </div>
+                
+            </div>
+            </div>
+            
+            
+
+            
+            
+            
+            
             <!-- now the footer! -->
             
-            <div class="footer1">
+            <div class="footer1contact">
                 <div><img src="logo_no_text.png" alt="penny juice, logo, pineapple, watermelon" width=200px height=220px>
                 <h5>IT MAKES <i>CENTS</i>!</h5>
-            </div>
-            </div>
-            <div class="flex-container5">
-                <div><img src="social_fb.png" alt="facebook, logo" width=50px></div>
-                <div><img src="social_twit.png" alt="twitter, logo" width=50px></div>
-                <div><img src="social_ig.png" alt="instagram, logo" width=50px></div>
-                <div><img src="social_yt.png" alt="youtube, logo" width=50px></div>
                 </div>
+            </div>
+            
+             <!-- SOCIALS -->
+            <div class="flex-container5">
+                <a href="https://facebook.com"><img src="social_fb.png" alt="facebook, logo" width=50px></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://twitter.com"><img src="social_twit.png" alt="twitter, logo" width=50px></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://instagram.com"><img src="social_ig.png" alt="instagram, logo" width=50px></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://youtube.com"><img src="social_yt.png" alt="youtube, logo" width=50px></a>
+            </div>
+            
+            <!-- BOTTOM LINKS -->
+            
+
             
             <div class="footer2">
             <h6><br><br>
- Privacy Policy&emsp;|&emsp;Do Not Share My Information&emsp;|&emsp;Conditions of Use&emsp;|&emsp;Notice and Take Down Policy&emsp;|&emsp;Website Accessibility Policy <br><br>
+                <a href="https://policies.hibuwebsites.com/privacy-policy">Privacy Policy</a>&emsp;|&emsp;<a href="https://policies.hibuwebsites.com/cookie-policy">Do Not Share My Information</a>&emsp;|&emsp;<a href="            https://policies.hibuwebsites.com/conditions-of-use">Conditions of Use</a>&emsp;|&emsp;<a href="       https://policies.hibuwebsites.com/infringement-policy">Notice and Take Down Policy</a>&emsp;|&emsp;<a href="https://policies.hibuwebsites.com/accessibility-statement">Website Accessibility Policy</a> <br><br>
            © 2024 The content on this website is owned by us and our licensors. Do not copy any content (including images) without our consent.<br><br><br>
             </h6>
             </div>
             
-        </div>
+
         </body>
 </html>
