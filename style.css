@@ -8,6 +8,8 @@ body {
       
 }
 
+
+
 .material-symbols-outlined {
 font-variation-settings:
   'FILL' 0,
@@ -20,6 +22,7 @@ font-variation-settings:
     display:inline-flex;
     vertical-align:top;
 }
+
 
 /*h1, h2, h3 {
     margin: 0;
@@ -181,13 +184,22 @@ h9 {
 
 /* do next part in case we have a hover state .. otherwise it won't know where to place the hover state */
 
-.nav ul li a{
+.nav ul li a {
     display: block;
-    font-family: leaguespartan-thin;
-    color: white;
-    font-size: 14px;
+
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 70px;
+  color: #919191;
+    
     padding: 0px 0px;
-    text-decoration: none;
+      text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0); /* Start with transparent underline */
+  transition: text-decoration-color 300ms;
+    text-underline-offset: 10px;
     text-align: center;
     margin-left: 40px;
     margin-right: 40px;
@@ -199,22 +211,28 @@ h9 {
     display: none; /* bc if you use a block for the dropdown, play with it and see what happens */
     position: absolute;
     background-color: cadetblue;
-    padding: 10px;
+    padding: 2px;
     border-radius: 0px 0px 10px 10px;  /* curves the corners .. top left , top right, bottom right, bottom left */
 }
 
 /* next part goes back to the previous .nav ul li */
 .nav ul li a:hover {
+    overflow: visible !important;
     display: block;
-    background-color: firebrick;
+    background-color: black;
+    color: #919191;
     padding: 0px;
+    text-decoration: underline;
+    text-decoration-color: #919191;
+    text-underline-offset: 10px;
+    text-decoration-thickness: .05rem;
 }
 
 /*dropdown next*/
 .nav ul li:hover ul {
     display: block;
-    background-color: firebrick;
-    padding: 5px 5px;
+    background-color: white;
+    padding: 2px 2px;
 }
 
 
@@ -248,6 +266,28 @@ h9 {
     width: 100%;
 }
 
+.breadcrumbs a {
+    color: #5b5b5b;
+    text-decoration: none;
+     text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0); /* Start with transparent underline */
+  transition: text-decoration-color 300ms;
+    text-underline-offset: 10px;
+        text-decoration-thickness: .05rem;
+}
+
+.breadcrumbs a:hover {    overflow: visible !important;
+    display: block;
+    background-color: transparent;
+    color: #919191;
+    padding: 0px;
+    text-decoration: underline;
+    text-decoration-color: #919191;
+    text-underline-offset: 10px;
+    text-decoration-thickness: .05rem;
+    
+}
+
 .breadcrumbs h7 {
     position: absolute;
     top: 308px;
@@ -272,16 +312,28 @@ h9 {
 
 .theleader h1 {
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 100px;
 }
 
 .theleader h2 {
     position: absolute;
     width: 450px;
-    top: 460px;
+    top: 510px;
     left: 100px;
 }
+
+
+details > summary {
+  list-style-position: outside;
+  margin-left: 0px;
+    color: #336633;
+ 
+}
+details > summary::marker {
+        color: #c6d299;
+}
+
 
 .shopconcentrates {
     width: inherit;
@@ -297,8 +349,8 @@ h9 {
 .shopconcentrates h2{
     position: relative;
     width: inherit;
-    top: 150px;
-    left: 100px;
+    top: 40px;
+    left: 0px;
 }
 
 .flex-container {
@@ -306,69 +358,187 @@ h9 {
     /*background-color: black;*/
     justify-content: center;
     clear: both; /* means that the content within each column is not going to overflow */
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 /* next, doing the divs within the above div, use a forward arrow > */
+
+/**** TRYING SOMETHING ***/
+.hover-img {
+  background-color: transparent;
+  color: #fff;
+  display: inline-block;
+  margin: 8px;
+  max-width: 200px;
+  min-width: 200px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+    
+}
+
+.hover-img * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+        text-decoration: none;
+    color: white;
+      font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+}
+
+.hover-img::before,
+.hover-img::after {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(2);
+}
+
+.hover-img img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+    text-decoration: none;
+}
+
+.hover-img figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  transition-delay: 0.1s;
+  font-size: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hover-img:hover::before,
+.hover-img:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.hover-img:hover > img {
+  opacity: 0.7;
+}
+
+.hover-img:hover figcaption {
+  opacity: 1;
+}
+
+
+
+/************ ROW ONE *************/
+
 .flex-container > div {
     /*background-color: darkolivegreen;
     color: antiquewhite; /* text color */
-    width: 100%;
+    width: 15%;
     text-align: center;
     line-height: 15px;
     margin: 40px;
 }
+
+.flex-container > div > img {
+    border: solid 3px;
+}
+
+.flex-container > div > a:hover {
+    border: solid 10px;
+}
+
+
+
+/************ ROW TWO *************/
 
 .flex-container2 {
     display: flex;
     /*background-color: black;*/
     justify-content: center;
-    justify-content: center;
     clear: both; /* means that the content within each column is not going to overflow */
-    margin-top: 200px;
+    margin-top: 40px;
 }
 
 .flex-container2 > div {
     /*background-color: darkolivegreen;
     color: antiquewhite; /* text color */
-    width: 100%;
+    width: 15%;
     text-align: center;
     line-height: 15px;
     margin: 40px;
 }
+
+.flex-container2 > div > img {
+    border: solid 3px;
+}
+
+/************ ROW THREE *************/
 
 .flex-container3 {
     display: flex;
     /*background-color: black;*/
     justify-content: center;
     clear: both; /* means that the content within each column is not going to overflow */
-    margin-top: 200px;
+    margin-top: 40px;
 }
 
 .flex-container3 > div {
     /*background-color: darkolivegreen;*/
-    width: 100%;
+    width: 15%;
     text-align: center;
     line-height: 15px;
     margin: 40px;
+    justify-content: center;
 }
+
+.flex-container3 > div > img {
+    border: solid 3px;
+}
+
+/************ ROW FOUR *************/
 
 .flex-container4 {
     display: flex;
     /*background-color: black;*/
     justify-content: center;
     clear: both; /* means that the content within each column is not going to overflow */
-    margin-top: 200px;
+    margin-top: 40px;
 }
 
 .flex-container4 > div {
     /*background-color: darkolivegreen;
     /*color: antiquewhite; /* text color */
-    width: 100%;
+    width: 15%;
     text-align: center;
     line-height: 15px;
     margin: 40px;
 }
+
+.flex-container4 > div > img {
+    border: solid 3px;
+}
+
+
+/********* SHOP PITCHERS ***********/
 
 .shoppitchers {
     width: inherit;
@@ -384,8 +554,8 @@ h9 {
 .shoppitchers h2{
     position: relative;
     width: inherit;
-    top: 150px;
-    left: 100px;
+    top: 40px;
+    left: 0px;
 }
 
 
@@ -400,13 +570,13 @@ h9 {
 
 .easytouse h1 {
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 100px;
 }
 
 .easytouse h2 {
     position: absolute;
-    top: 460px;
+    top: 510px;
 }
 
 
@@ -419,12 +589,12 @@ h9 {
 
 .mixdirections h1  {
     position: absolute;
-    top: 700px;
+    top: 750px;
 }
 
 .mixdirections h2 {
     position: absolute;
-    top: 810px;
+    top: 860px;
 }
 
 /*Pre-Measured Mix Pitchers*/
@@ -434,16 +604,101 @@ h9 {
 
 .premeasured h1 {
     position: absolute;
-    top: 1000px;
+    top: 1050px;
 }
 
 .premeasured h2 {
     position: absolute;
-    top: 1110px;
+    top: 1160px;
 }
 
 
 
+
+/************** NUTRITION PAGE  **************/
+
+/* Nutrition Facts */
+
+.nutrition {
+    margin-left: 100px;
+}
+
+.nutrition h1 {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+
+.nutrition h2 {
+    position: absolute;
+    top: 550px;
+}
+
+.nutrition > div {
+    top: 550px;
+    text-align: center;
+    line-height: 12px;
+    margin: 40px;
+}
+
+
+/* Food Safety */
+
+.safety {
+    margin-left: 100px;
+}
+
+.safety h1 {
+    position: absolute;
+    top: 1100px;
+    left: 100px;
+}
+
+.safety h2 {
+    position: absolute;
+    top: 1210px;
+}
+
+
+
+
+.flex-container-compliancelist_checks {
+    display: flex;
+    /*background-color: black;*/
+    clear: both; /* means that the content within each column is not going to overflow */
+    margin-top: 300px;
+}
+
+.flex-container-compliancelist_checks > div {
+    /*background-color: darkolivegreen;
+    color: antiquewhite; /* text color */
+    width: 50px;
+    height: 200px;
+    text-align: center;
+    line-height: 12px;
+    margin: 40px;
+
+}
+
+
+
+.flex-container-compliancelist_text {
+    display: flex;
+    /*background-color: black;*/
+    margin-top: 500px;
+        height: 40px;
+    text-align: left;
+    width: 5000px;
+}
+
+.flex-container-compliancelist_text > div {
+
+    width: 5000px;
+    height: 40px;
+    text-align: left;
+    line-height: 12px;
+
+}
 
 /************** CONTACT US PAGE **************/
 
@@ -456,13 +711,13 @@ h9 {
 
 .howcanwehelp h1 {
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 100px;
 }
 
 .howcanwehelp h2 {
     position: absolute;
-    top: 460px;
+    top: 510px;
 }
 
 
@@ -475,12 +730,12 @@ h9 {
 
 .orderstatus h1  {
     position: absolute;
-    top: 1100px;
+    top: 1150px;
 }
 
 .orderstatus h2 {
     position: absolute;
-    top: 1010px;
+    top: 1060px;
 }
 
 .flex-container-orderstatus {
@@ -489,7 +744,7 @@ h9 {
     justify-content: center;
     justify-content: center;
     clear: both; /* means that the content within each column is not going to overflow */
-    margin-top: 930px;
+    margin-top: 980px;
 }
 
 .flex-container-orderstatus > div {
@@ -506,13 +761,64 @@ h9 {
 }
 
 
-/************** FOOTERS **************/
 
-.footer1 {
-    margin-top: 1000px;
+/* SEND MESSAGE */
+.sendmessage {
+    margin-left: 100px;
 }
 
-.footer1 > div > img {
+.sendmessage h1  {
+    position: absolute;
+    top: 1650px;
+}
+
+.sendmessage h2 {
+    position: absolute;
+    top: 1060px;
+}
+
+.flex-container-sendmessage {
+    display: flex;
+    /*background-color: black;*/
+    justify-content: left;
+    justify-content: left;
+    clear: both; /* means that the content within each column is not going to overflow */
+    margin-top: 250px;
+}
+
+.flex-container-sendmessage > div {
+    /*background-color: darkolivegreen;
+    color: antiquewhite; /* text color */
+    width: 100%;
+    height: 200px;
+    text-align: left;
+    line-height: 12px;
+    margin-left: 0px;
+    margin-right: 200px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #919191;
+}
+
+.form-textarea {
+
+    font-family : Molle !important;
+
+}
+
+
+
+
+
+/************** FOOTERS **************/
+
+
+
+.footer1index {
+    margin-top: 220px;
+}
+
+.footer1index > div > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -520,13 +826,87 @@ h9 {
     top: 50px;
 }
 
-.footer1 > div {
+.footer1index > div {
     display: block;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     text-align: center;
 }
+
+
+
+
+
+
+
+.footer1about {
+    margin-top: 1150px;
+}
+
+.footer1about > div > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50px;
+}
+
+.footer1about > div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+}
+
+
+
+
+.footer1nutrition {
+    margin-top: 800px;
+}
+
+.footer1nutrition > div > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50px;
+}
+
+.footer1nutrition > div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+}
+
+
+
+
+.footer1contact {
+    margin-top: 900px;
+}
+
+.footer1contact > div > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50px;
+}
+
+.footer1contact > div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+}
+
+
 
 .flex-container5 {
     display: flex;
@@ -537,6 +917,7 @@ h9 {
 
 .flex-container5 > div > img
 {
+
     display: flex;
     margin-top: -10px;
     margin-left: 25px;
@@ -544,11 +925,26 @@ h9 {
 
 }
 
+
+
+
 .footer2 {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 80px;
     background-color: #000000;
     color: white;
     text-align: center;
     
 }
+
+.footer2 a {
+        text-decoration: none;
+    color: white;
+}
+
+.footer2 a:hover {
+        text-decoration: underline;
+    color: white;
+        text-underline-offset: 5px;
+}
+
