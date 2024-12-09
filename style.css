@@ -249,6 +249,7 @@ h9 {
 
 .nav ul li ul li a:hover {
     color: darkblue;
+    background-color: white;
 }
 
 /* now for the slider */
