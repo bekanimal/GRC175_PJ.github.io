@@ -8,14 +8,15 @@
         <meta name="keyphrases" content="it makes cents, in juice we trust, leader in childcare juice">
         <meta name="viewport" content="width=device width, intial-scale=1">
         
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../CSS/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Molle&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=play_arrow" />
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=play_arrow" />
+   
     </head>
     
     <body>
@@ -26,19 +27,27 @@
                 
             <div class="nav">
                         <ul>
-                            <li><a class="selected" href="index.html"> <img src="pg_logo_transparent.png" alt="logo, penny juice" width=200px></a></li>
+                            <li><a class="selected" href="index.html"> <img src="pg_logo_transparent.png" alt="logo, penny juice" width=210px></a></li>
                             <li><a href="about.html"><h3>HOW TO USE</h3></a></li>
-                            <li><a href="nutrition_compliance.html"><h3>NUTRITION & COMPLIANCE</h3></a>
+                            <li><a href="nutrition_compliance.html"><h3>NUTRITION & COMPLIANCE &#9660;</h3></a>
                             <!--now nesting a DROP-DOWN beneath flavors-->
                             <!--notice the unordered list below is within the flavors list bc it is a DROP-DOWN-->
                                 <ul>
-                                    <li><a href="orange.html"><h3>Orange</h3></a></li>
-                                    <li><a href="grape.html"><h3>Grape</h3></a></li>
-                                    <li><a href="cherry.html"><h3>Cherry</h3></a></li>
+                                    <li><a href="nutrition_compliance.html"><h3>Our Nutritional Label</h3></a></li>
+                                    <li><a href="nutrition_compliance.html"><h3>Food Safety Compliance</h3></a></li>
                                 </ul>
                             </li>    
                             
-                            <li><a href="contact.html"><h3>CONTACT US</h3></a></li>
+                            <li><a href="contact_us.html"><h3>CONTACT US &#9660;</h3></a>
+                            <ul>
+                                    <li><a href="contact_us.html"><h3>My Order</h3></a></li>
+                                    <li><a href="contact_us.html"><h3>Location</h3></a></li>
+                                </ul>
+                            
+                            </li>
+                   
+                            <li><a class="selected" href="index.html"> <img src="account_icon.png" alt="logo, penny juice" width=30px    padding: 0px;></a></li>
+                            <li><a class="selected" href="index.html"> <img src="shopping_cart_icon.png" alt="logo, penny juice" width=30px padding: 0px;></a></li>
                         </ul>
             
                 </div>
@@ -52,7 +61,7 @@
         </div>
         
         <div class="breadcrumbs">
-            <h7>Home</h7>
+            <h7><a href="index.html">Home</a></h7>
             <h8><span class="material-symbols-outlined">play_arrow</span></h8>
             <h9> The Leader in Childcare Juice </h9>
             </div>    
@@ -61,8 +70,16 @@
             <h1> The Leader in Childcare Juice </h1>
             <h2> Family-owned since 2001, our company provides 100% blended fruit juice concentrates specifically designed for childcare centers in a variety of flavors that all kids can enjoy.</h2>
                 </div>
+                
+
+     
+                
+           <br><br>     
        <div class="shopconcentrates">
-            <h1> Shop Our Concentrates</h1>
+<h1><details>   
+    <summary>&nbsp;Shop Our Concentrates</summary>
+
+           <p>
             <h2>
 &bull; Add bottles to cart in increments of <b>6</b> -- six bottles makes one “case”
             <br><br>
@@ -71,42 +88,167 @@
 &bull; Each bottle added to cart is a ½-gallon of concentrate
             <br><br>
 &bull; The price of one case is <b>$169</b></h2>
-           
-        </div>
-<!--  
+
+
+           <!--  
             now going to make the 4 columns in the body  --> 
+<!--    ROW 1       -->
             <h3>
             <div class="flex-container">
-                <div>Strawberry Kiwi<br><h4>(Concentrate)</h4></div>
-                <div>Cherry<br><h4>(Concentrate)</h4></div>
-                <div>Orange Pineapple<br><h4>(Concentrate)</h4></div>
-                <div>Tangerine<br><h4>(Concentrate)</h4></div>
+                
+                <div>
+                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_strawberry_kiwi.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Strawberry Kiwi<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_cherry.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Cherry<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_orange_pineapple.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Orange Pineapple<br><h4>(Concentrate)</h4></div>
+                    <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_tangerine.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Tangerine<br><h4>(Concentrate)</h4></div>
             </div>
             
+                
+<!--    ROW 2      -->                
             <div class="flex-container2">
-                <div>Cran-Apple<br><h4>(Concentrate)</h4></div>
-                <div>Peach Mango<br><h4>(Concentrate)</h4></div>
-                <div>Berry<br><h4>(Concentrate)</h4></div>
-                <div>Apple<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_cran_apple.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Cran-Apple<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_peach_mango.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Peach Mango<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_berry.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Berry<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_apple.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Apple<br><h4>(Concentrate)</h4></div>
             </div>
 
+                
+ <!--    ROW 3      -->                    
             <div class="flex-container3">
-                <div>Green Watermelon<br><h4>(Concentrate)</h4></div>
-                <div>Orange Raspberry<br><h4>(Concentrate)</h4></div>
-                <div>Strawberry Banana<br><h4>(Concentrate)</h4></div>
-                <div>Fruit Punch<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_green_watermelon.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Green Watermelon<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_orange_raspberry.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Orange Raspberry<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_strawberry_banana.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Strawberry Banana<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_fruit_punch.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Fruit Punch<br><h4>(Concentrate)</h4></div>
             </div>
-            
+                
+                
+<!--    ROW 4      -->                 
             <div class="flex-container4">
-                <div>Blue Raspberry<br><h4>(Concentrate)</h4></div>
-                <div>White Grape<br><h4>(Concentrate)</h4></div>
-                <div>Citrus Punch<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_blue_raspberry.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Blue Raspberry<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_white_grape.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    White Grape<br><h4>(Concentrate)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_citrus_punch.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Citrus Punch<br><h4>(Concentrate)</h4></div>
+                    
+                    
                 <div>   </div>
+                
             </div>
             </h3>
+                
+        </p></details>
+        </div>
+               <br><br><br><br><br>
+                
                  <div class="shoppitchers">
-            <h1> Shop Our Mix Pitchers</h1>
-           
+                 
+                 <h1><details>   
+    <summary>&nbsp;Shop Our Mix Pitchers</summary>
+            
+           <p>
             <h2>
 &bull; Must add <b>at least one case of concentrate</b> before ordering a Mix Pitcher
             <br><br>
@@ -116,57 +258,179 @@
             <br><br>
 &bull; The price of one Mix Pitcher is <b>$8</b></h2>
            
-        </div>
-         <h3>
+
+         <!--    ROW 1       -->
+            <h3>
             <div class="flex-container">
-                <div>Strawberry Kiwi<br><h4>(Mix Pitcher)</h4></div>
-                <div>Cherry<br><h4>(Mix Pitcher)</h4></div>
-                <div>Orange Pineapple<br><h4>(Mix Pitcher)</h4></div>
-                <div>Tangerine<br><h4>(Mix Pitcher)</h4></div>
+                
+                <div>
+                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_strawberry_kiwi.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Strawberry Kiwi<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_cherry.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Cherry<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_orange_pineapple.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Orange Pineapple<br><h4>(Mix Pitcher)</h4></div>
+                    <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_tangerine.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Tangerine<br><h4>(Mix Pitcher)</h4></div>
             </div>
             
+                
+<!--    ROW 2      -->                
             <div class="flex-container2">
-                <div>Cran-Apple<br><h4>(Mix Pitcher)</h4></div>
-                <div>Peach Mango<br><h4>(Mix Pitcher)</h4></div>
-                <div>Berry<br><h4>(Mix Pitcher)</h4></div>
-                <div>Apple<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_cran_apple.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Cran-Apple<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_peach_mango.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Peach Mango<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_berry.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Berry<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_apple.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Apple<br><h4>(Mix Pitcher)</h4></div>
             </div>
 
+                
+ <!--    ROW 3      -->                    
             <div class="flex-container3">
-                <div>Green Watermelon<br><h4>(Mix Pitcher)</h4></div>
-                <div>Orange Raspberry<br><h4>(Mix Pitcher)</h4></div>
-                <div>Strawberry Banana<br><h4>(Mix Pitcher)</h4></div>
-                <div>Fruit Punch<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_green_watermelon.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Green Watermelon<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_orange_raspberry.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Orange Raspberry<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_strawberry_banana.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Strawberry Banana<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_fruit_punch.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Fruit Punch<br><h4>(Mix Pitcher)</h4></div>
             </div>
-            
+                
+                
+<!--    ROW 4      -->                 
             <div class="flex-container4">
-                <div>Blue Raspberry<br><h4>(Mix Pitcher)</h4></div>
-                <div>White Grape<br><h4>(Mix Pitcher)</h4></div>
-                <div>Citrus Punch<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_blue_raspberry.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Blue Raspberry<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_white_grape.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    White Grape<br><h4>(Mix Pitcher)</h4></div>
+                <div>                <figure class="hover-img">
+<a href="nutrition_compliance.html"><img src="Juice_pics_citrus_punch.jpg" alt="penny juice, logo, pineapple, watermelon" width=200px height=200px style="padding:0px;border: 3px solid #919191;"></a>
+  <figcaption>
+      <h3><a href="nutrition_compliance.html">ADD TO CART</a></h3>
+  </figcaption>
+</figure>
+                    <br><br><br>
+                    Citrus Punch<br><h4>(Mix Pitcher)</h4></div>
                 <div>   </div>
+                
             </div>
-        </h3>
+            </h3>
+                
+        </p></details>
+        </div>
             <!-- now the footer! -->
-            <div class="footer1">
+            <div class="footer1index">
                 <div><img src="logo_no_text.png" alt="penny juice, logo, pineapple, watermelon" width=200px height=220px>
                 <h5>IT MAKES <i>CENTS</i>!</h5>
             </div>
             </div>
             
+            <!-- SOCIALS -->
+            
             <div class="flex-container5">
-                <div><img src="social_fb.png" alt="facebook, logo" width=50px></div>
-                <div><img src="social_twit.png" alt="twitter, logo" width=50px></div>
-                <div><img src="social_ig.png" alt="instagram, logo" width=50px></div>
-                <div><img src="social_yt.png" alt="youtube, logo" width=50px></div>
+                <a href="https://facebook.com"><img src="social_fb.png" alt="facebook, logo" width=50px></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://twitter.com"><img src="social_twit.png" alt="twitter, logo" width=50px></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://instagram.com"><img src="social_ig.png" alt="instagram, logo" width=50px></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://youtube.com"><img src="social_yt.png" alt="youtube, logo" width=50px></a>
             </div>
+            
+            
+            <!-- BOTTOM LINKS -->
             
             <div class="footer2">
             <h6><br><br>
- Privacy Policy&emsp;|&emsp;Do Not Share My Information&emsp;|&emsp;Conditions of Use&emsp;|&emsp;Notice and Take Down Policy&emsp;|&emsp;Website Accessibility Policy <br><br>
+                <a href="https://policies.hibuwebsites.com/privacy-policy">Privacy Policy</a>&emsp;|&emsp;<a href="https://policies.hibuwebsites.com/cookie-policy">Do Not Share My Information</a>&emsp;|&emsp;<a href="            https://policies.hibuwebsites.com/conditions-of-use">Conditions of Use</a>&emsp;|&emsp;<a href="       https://policies.hibuwebsites.com/infringement-policy">Notice and Take Down Policy</a>&emsp;|&emsp;<a href="https://policies.hibuwebsites.com/accessibility-statement">Website Accessibility Policy</a> <br><br>
            © 2024 The content on this website is owned by us and our licensors. Do not copy any content (including images) without our consent.<br><br><br>
             </h6>
             </div>
-            
         </div>   
         </body>
 </html>
